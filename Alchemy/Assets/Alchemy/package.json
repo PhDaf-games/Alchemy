@@ -1,12 +1,12 @@
 {
     "name": "com.annulusgames.alchemy",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "displayName": "Alchemy",
     "description": "Provides a rich set of editor extensions and serialization extensions for Unity.",
     "unity": "2021.2",
     "author": {
-        "name": "Annulus Games",
-        "url": "https://github.com/annulusgames"
+        "name": "Annulus Games (modfied PhDaf-Games)",
+        "url": "https://github.com/phdaf-games"
     },
     "samples": [
         {
