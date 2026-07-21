@@ -61,9 +61,9 @@ namespace Alchemy.Editor
             }
         }
 
-        public override void OnGUI(int instanceID, Rect selectionRect)
+        public override void OnGUI(EntityId entityID, Rect selectionRect)
         {
-            var gameObject = EditorUtility.InstanceIDToObject(instanceID) as GameObject;
+            var gameObject = EditorUtility.EntityIdToObject(entityID) as GameObject;
             if (gameObject == null) return;
 
             var settings = AlchemySettings.GetOrCreateSettings();
