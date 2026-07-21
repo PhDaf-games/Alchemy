@@ -15,7 +15,7 @@ namespace Alchemy.Editor
 
             foreach (var drawer in drawers)
             {
-                EditorApplication.hierarchyWindowItemOnGUI += drawer.OnGUI;
+                EditorApplication.hierarchyWindowItemByEntityIdOnGUI += drawer.OnGUI;
             }
         }
     }
