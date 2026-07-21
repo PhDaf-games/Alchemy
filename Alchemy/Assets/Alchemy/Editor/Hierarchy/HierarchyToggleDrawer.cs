@@ -7,9 +7,9 @@ namespace Alchemy.Editor
 {
     public sealed class HierarchyToggleDrawer : HierarchyDrawer
     {
-        public override void OnGUI(int instanceID, Rect selectionRect)
+        public override void OnGUI(EntityId entityId, Rect selectionRect)
         {
-            var gameObject = EditorUtility.InstanceIDToObject(instanceID) as GameObject;
+            var gameObject = EditorUtility.EntityIdToObject(entityId) as GameObject;
             if (gameObject == null) return;
             if (gameObject.TryGetComponent<HierarchyObject>(out _)) return;
 
